@@ -45,6 +45,11 @@ h2 {
     cursor: pointer;
     font-size: 16px;
     background-color: #eee;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.toggle-buttons button:hover {
+    background-color: #ddd;
 }
 
 .toggle-buttons .active {
@@ -65,6 +70,11 @@ h2 {
     cursor: pointer;
     font-size: 16px;
     margin-bottom: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.google-login:hover {
+    background-color: #333;
 }
 
 .google-login img {
@@ -88,6 +98,11 @@ form input {
     border: 1px solid #ccc;
     border-radius: 5px;
     font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+form input:focus {
+    border-color: #28a745;
 }
 
 form select {
@@ -97,15 +112,15 @@ form select {
     border: 1px solid #ccc;
     border-radius: 5px;
     font-size: 16px;
+    transition: border-color 0.3s ease;
 }
 
-.form select:hover {
+form select:hover {
     background-color: #f0f8ff;
 }
 
-.form select.dragover {
-    background-color: #d0e8ff;
-    border-color: #0056b3;
+form select:focus {
+    border-color: #28a745;
 }
 
 /* Signup Button */
@@ -118,6 +133,7 @@ form select {
     font-size: 16px;
     cursor: pointer;
     border-radius: 5px;
+    transition: background-color 0.3s ease;
 }
 
 .signup-btn:hover {
@@ -136,6 +152,10 @@ form select {
     font-weight: bold;
 }
 
+.login-link a:hover {
+    text-decoration: underline;
+}
+
 /* Welcome Section */
 .welcome-section {
     width: 50%;
@@ -152,7 +172,6 @@ form select {
     color: #555;
 }
 
-
 .welcome-section img {
     width: 350px; /* Adjust image size */
     height: 630px;
@@ -162,7 +181,6 @@ form select {
     background-repeat: no-repeat; /* Prevents repeating */
     background-attachment: fixed; 
     position: absolute;
-    
 }
 
 .welcome-section h2 {
@@ -177,7 +195,6 @@ form select {
     max-width: 200%;
     text-align: left;
 }
-
 
 .text-overlay {
     position: absolute;
